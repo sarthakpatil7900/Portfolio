@@ -5,4 +5,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
+  max-width: 1200px;   /* or 1100 / 1000 – adjust to taste */
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
