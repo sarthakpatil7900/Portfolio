@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Library Management System (Java + MySQL)",
+    "imageSrc": "projects/library.png",
+    "description": "Console-based system for managing book issues, returns, and records using Java and MySQL.",
+    "skills": ["Java", "JDBC", "MySQL", "OOP"],
+    "demo": "https://github.com/sarthakpatil7900/Library-Management-System-Java-and-Mysql/blob/main/ScreenShots.pdf",
+    "source": "https://github.com/sarthakpatil7900/Library-Management-System-Java-and-Mysql"
+  },
+  {
+    "title": "AI-Based Head Massager App",
+    "imageSrc": "projects/head-massager.png",
+    "description": "Mobile app and backend to control an AI-powered head massager with multiple modes.",
+    "skills": ["React Native", "Node.js", "MongoDB", "REST API"],
+    "demo": "https://gitlab.com/sarthakpatil8281/head_massager",
+    "source": "https://gitlab.com/sarthakpatil8281/head_massager"
+  },
+  {
+    "title": "E-commerce Web Application (MERN)",
+    "imageSrc": "projects/ecommerce.png",
+    "description": "MERN-based e-commerce site with product listing, cart, and user login.",
+    "skills": ["React", "Node.js", "Express", "MongoDB"],
+    "demo": "https://e-commerce-mern-fullstack.netlify.app/",
+    "source": "https://github.com/sarthakpatil7900/e-commerce-mern-fullstack"
+  }
+]
