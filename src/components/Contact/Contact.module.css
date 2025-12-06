@@ -62,3 +62,39 @@
     align-items: center;
   }
 }
+
+@media screen and (max-width: 600px) {
+
+  .container {
+    padding: 40px 20px;      /* reduce large padding */
+    gap: 18px;
+  }
+
+  .text h2 {
+    font-size: 42px;         /* was 80px — much better for mobile */
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .text p {
+    font-size: 20px;         /* was 40px */
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  .links {
+    gap: 18px;
+  }
+
+  .link a {
+    font-size: 18px;         /* was 30px */
+    letter-spacing: 1px;
+    text-align: center;
+    word-break: break-word;  /* prevent long URLs from overflowing */
+  }
+
+  .link {
+    gap: 12px;               /* reduce spacing between icon + text */
+    justify-content: center;
+  }
+}
