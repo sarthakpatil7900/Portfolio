@@ -5,7 +5,4 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  max-width: 1040px;      /* try 1040–1200px and see what feels right */
-  margin: 0 auto;         /* center the whole site */
-  padding: 0 1.5rem;      /* side padding so it doesn't touch edges */
 }
