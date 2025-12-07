@@ -68,7 +68,6 @@
   flex-direction: row;
   align-items: center;
   gap: 17px;
-  background: #19376d;
   background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
   border-radius: 10px;
   padding: 24px;
@@ -100,6 +99,69 @@
   margin-left: 17px;
 }
 
+/* ---------- Laptop (<= 1200px) ---------- */
+@media screen and (max-width: 1200px) {
+  .skillImageContainer {
+    width: 100px;
+    height: 100px;
+  }
+
+  .skillImageContainer img {
+    width: 65px;
+  }
+
+  .skill p {
+    font-size: 22px;
+  }
+
+  .historyItemDetails h3 {
+    font-size: 26px;
+  }
+
+  .historyItemDetails p {
+    font-size: 18px;
+  }
+
+  .historyItemDetails ul {
+    font-size: 22px;
+  }
+
+  .historyItem img {
+    width: 45px;
+  }
+}
+
+/* ---------- Tablet (<= 1024px) ---------- */
+@media screen and (max-width: 1024px) {
+  .container {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .skills,
+  .history {
+    width: 48%;
+  }
+
+  .skillImageContainer {
+    width: 90px;
+    height: 90px;
+  }
+
+  .skillImageContainer img {
+    width: 60px;
+  }
+
+  .skill p {
+    font-size: 20px;
+  }
+
+  .historyItem {
+    padding: 18px;
+  }
+}
+
+/* ---------- Tablet + Large Phones (<= 830px) ---------- */
 @media screen and (max-width: 830px) {
   .content {
     flex-direction: column;
@@ -109,12 +171,77 @@
 
   .skills {
     width: 100%;
-    flex-direction: row;
     justify-content: center;
+  }
+
+  .skillImageContainer {
+    width: 80px;
+    height: 80px;
+  }
+
+  .skillImageContainer img {
+    width: 50px;
+  }
+
+  .skill p {
+    font-size: 18px;
   }
 
   .history {
     width: 100%;
-    gap: 9px;
+    gap: 20px;
+  }
+
+  .historyItemDetails h3 {
+    font-size: 22px;
+  }
+
+  .historyItemDetails p {
+    font-size: 16px;
+  }
+
+  .historyItemDetails ul {
+    font-size: 18px;
+  }
+
+  .historyItem img {
+    width: 40px;
+  }
+}
+
+/* ---------- Small Phones (<= 480px) ---------- */
+@media screen and (max-width: 480px) {
+  .container {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  .skillImageContainer {
+    width: 70px;
+    height: 70px;
+  }
+
+  .skillImageContainer img {
+    width: 40px;
+  }
+
+  .skill p {
+    font-size: 16px;
+  }
+
+  .historyItem {
+    padding: 14px;
+  }
+
+  .historyItemDetails h3 {
+    font-size: 18px;
+  }
+
+  .historyItemDetails p {
+    font-size: 14px;
+  }
+
+  .historyItemDetails ul {
+    font-size: 16px;
   }
 }

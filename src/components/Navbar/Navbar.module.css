@@ -17,7 +17,6 @@
   color: var(--color-text);
 }
 
-
 .menuBtn {
   display: none;
 }
@@ -38,25 +37,67 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 830px) {
+/* ---------- Laptop (<= 1200px) ---------- */
+@media screen and (max-width: 1200px) {
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+    margin: 0 8%;
   }
 
-  .menu {
-    position: absolute;
-    right: 0;
-    margin-right: 10%;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 11px;
-    z-index: 3;
+  .title {
+    font-size: 28px;
+  }
+
+  .menuItems a {
+    font-size: 22px;
+  }
+
+  .menuItems {
+    gap: 35px;
+  }
+}
+
+/* ---------- Tablet (<= 1024px) ---------- */
+@media screen and (max-width: 1024px) {
+  .navbar {
+    margin: 0 6%;
+    padding-top: 50px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .menuItems a {
+    font-size: 20px;
+  }
+
+  .menuItems {
+    gap: 28px;
+  }
+}
+
+/* ---------- Tablet & Large Phones (<= 830px) ---------- */
+@media screen and (max-width: 830px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 6%;
   }
 
   .menuBtn {
     display: block;
     cursor: pointer;
+  }
+
+  .menu {
+    position: absolute;
+    right: 0;
+    margin-right: 6%;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 11px;
+    z-index: 3;
   }
 
   .menuItems {
@@ -65,7 +106,6 @@
     align-items: center;
     gap: 13px;
     border-radius: 10px;
-    background: rgb(25, 55, 109);
     background: linear-gradient(
       0deg,
       rgba(25, 55, 109, 0.2) 0%,
@@ -75,8 +115,37 @@
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
   }
 
+  .menuItems a {
+    font-size: 20px;
+  }
+
   .menuOpen {
     display: flex;
-    z-index: 1;
+    z-index: 3;
+  }
+}
+
+/* ---------- Small Phones (<= 480px) ---------- */
+@media screen and (max-width: 480px) {
+
+  .navbar {
+    margin: 0 4%;
+    padding-top: 40px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .menuBtn img {
+    width: 32px; /* shrink menu icon for small phones */
+  }
+
+  .menuItems {
+    padding: 20px 28px;
+  }
+
+  .menuItems a {
+    font-size: 18px;
   }
 }

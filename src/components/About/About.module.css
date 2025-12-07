@@ -23,6 +23,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 50px;
 }
 
 .aboutImage {
@@ -66,15 +67,67 @@
   font-size: 25px;
 }
 
+/* ---------- Laptop (<= 1200px) ---------- */
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 60px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .aboutItem h3,
+  .aboutItem p {
+    font-size: 22px;
+  }
+
+  .aboutImage {
+    width: 40%;
+  }
+}
+
+/* ---------- Tablet (<= 1024px) ---------- */
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 50px;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .aboutItem {
+    padding: 20px;
+  }
+
+  .aboutItem h3,
+  .aboutItem p {
+    font-size: 20px;
+  }
+
+  .aboutItems {
+    gap: 40px;
+  }
+}
+
+/* ---------- Tablets + Large Phones (<= 830px) ---------- */
 @media screen and (max-width: 830px) {
   .container {
     background-color: transparent;
     padding-left: 0;
     padding-right: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 6%;
+    margin-right: 6%;
   }
 
   .content {
     flex-direction: column;
+    text-align: center;
   }
 
   .aboutImage {
@@ -83,10 +136,43 @@
 
   .aboutItems {
     margin-top: 29px;
+    gap: 35px;
   }
 
   .aboutItem {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .aboutItem h3,
+  .aboutItem p {
+    font-size: 18px;
+  }
+}
+
+/* ---------- Small Phones (<= 480px) ---------- */
+@media screen and (max-width: 480px) {
+  .container {
+    margin-left: 4%;
+    margin-right: 4%;
+    padding: 25px 0;
+  }
+
+  .title {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+
+  .aboutItems {
+    gap: 25px;
+  }
+
+  .aboutItem {
+    padding: 15px 0;
+  }
+
+  .aboutItem h3,
+  .aboutItem p {
+    font-size: 16px;
   }
 }

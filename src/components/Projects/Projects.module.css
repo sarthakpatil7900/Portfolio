@@ -14,13 +14,65 @@
   text-transform: uppercase;
 }
 
+/* PROJECTS GRID */
 .projects {
   margin-top: 37px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr)); /* 4 per row on large screens */
+  gap: 24px;
   width: 100%;
+  justify-items: center; /* center cards in each grid cell */
+}
+
+/* ---------- Laptop (<=1200px) ---------- */
+@media screen and (max-width: 1200px) {
+  .container {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .projects {
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 per row */
+    gap: 20px;
+  }
+}
+
+/* ---------- Tablet (<=900px) ---------- */
+@media screen and (max-width: 900px) {
+  .container {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+
+  .title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 per row */
+    gap: 18px;
+  }
+}
+
+/* ---------- Mobile (<=600px) ---------- */
+@media screen and (max-width: 600px) {
+  .container {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  .title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .projects {
+    grid-template-columns: repeat(1, minmax(0, 1fr)); /* 1 per row */
+    gap: 18px;
+  }
 }

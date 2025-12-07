@@ -46,10 +46,47 @@
   letter-spacing: 1.5px;
 }
 
+/* ---------- Laptop (<=1200px) ---------- */
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 45px 8%;
+  }
+
+  .text h2 {
+    font-size: 65px;
+  }
+
+  .text p {
+    font-size: 30px;
+  }
+
+  .link a {
+    font-size: 24px;
+  }
+}
+
+/* ---------- Tablet (<=1024px) ---------- */
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 40px 6%;
+    gap: 20px;
+  }
+
+  .text h2 {
+    font-size: 55px;
+  }
+
+  .text p {
+    font-size: 28px;
+  }
+}
+
+/* ---------- Layout Shift (<=830px) ---------- */
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column;
     gap: 23px;
+    padding: 40px 6%;
   }
 
   .text {
@@ -63,21 +100,22 @@
   }
 }
 
+/* ---------- Mobile (<=600px) ---------- */
 @media screen and (max-width: 600px) {
 
   .container {
-    padding: 40px 20px;      /* reduce large padding */
+    padding: 40px 20px;
     gap: 18px;
   }
 
   .text h2 {
-    font-size: 42px;         /* was 80px — much better for mobile */
+    font-size: 42px;
     letter-spacing: 2px;
     text-align: center;
   }
 
   .text p {
-    font-size: 20px;         /* was 40px */
+    font-size: 20px;
     letter-spacing: 1px;
     text-align: center;
   }
@@ -87,14 +125,33 @@
   }
 
   .link a {
-    font-size: 18px;         /* was 30px */
-    letter-spacing: 1px;
+    font-size: 18px;
     text-align: center;
-    word-break: break-word;  /* prevent long URLs from overflowing */
+    word-break: break-word;
   }
 
   .link {
-    gap: 12px;               /* reduce spacing between icon + text */
+    gap: 12px;
     justify-content: center;
+  }
+}
+
+/* ---------- Small Phones (<=480px) ---------- */
+@media screen and (max-width: 480px) {
+
+  .text h2 {
+    font-size: 36px;
+  }
+
+  .text p {
+    font-size: 18px;
+  }
+
+  .link a {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 30px 15px;
   }
 }

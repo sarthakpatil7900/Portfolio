@@ -100,12 +100,101 @@
   z-index: 0;
 }
 
+/* -------- Laptop scaling (<= 1200px) -------- */
+@media screen and (max-width: 1200px) {
+  .title {
+    font-size: 60px;
+    margin-bottom: 28px;
+  }
+
+  .description {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+
+  .contactBtn {
+    font-size: 24px;
+    padding: 14px 24px;
+  }
+
+  .heroImg {
+    width: 45%;
+  }
+}
+
+/* -------- Tablet layout (<= 1024px) -------- */
+@media screen and (max-width: 1024px) {
+  .container {
+    margin-top: 40px;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .title {
+    font-size: 52px;
+  }
+
+  .description {
+    font-size: 22px;
+  }
+}
+
+/* -------- Tablet & large phones (<= 830px) -------- */
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column-reverse;
+    margin-top: 32px;
+    margin-left: 6%;
+    margin-right: 6%;
   }
 
   .content {
     align-items: center;
+    text-align: center;
+  }
+
+  .heroImg {
+    width: 70%;
+    margin-bottom: 24px;
+  }
+
+  .title {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+
+  .description {
+    font-size: 20px;
+    margin-bottom: 28px;
+  }
+
+  .contactBtn {
+    font-size: 20px;
+    padding: 12px 22px;
+  }
+}
+
+/* -------- Small phones (<= 480px) -------- */
+@media screen and (max-width: 480px) {
+  .container {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  .heroImg {
+    width: 80%;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  .contactBtn {
+    font-size: 18px;
+    padding: 10px 20px;
   }
 }
