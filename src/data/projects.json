@@ -28,7 +28,7 @@
   "imageSrc": "projects/portfolio.png",
   "description": "Responsive portfolio website built using React and Vite with modular components, JSON-driven data, and full mobile optimization.",
   "skills": ["React", "Vite", "CSS Modules", "JavaScript"],
-  "demo": "https://sarthakpatil-portfolio.netlify.app/",
+  "demo": "https://sarthakpatil.com/",
   "source": "https://github.com/sarthakpatil7900/Portfolio"
 }
 ]
