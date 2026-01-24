@@ -9,7 +9,7 @@ import { Experience } from "./components/Experience/Experience";
 import { Projects } from "./components/Projects/Projects";
 import { Contact } from "./components/Contact/Contact";
 
-// ⬇️ Wrapper to use useLocation
+//  Wrapper to use useLocation
 function ScrollHandler() {
   const location = useLocation();
 
